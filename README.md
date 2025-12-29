@@ -32,9 +32,7 @@ $ docker run --rm -v $(pwd):/TREAD TREAD:v1
 The original dataset is stored as a large multi-event HDF5 file. 
 Due to file size constraints, this repository provides a single-event HDF5 file as a structural example only.
 The example file(20201210131958659999.hdf5) preserves exactly the same internal hierarchy as the original dataset.
-### Dataset Structure
-## HDF5 Data Structure
-
+### HDF5 Data Structure
 ```text
 /
 ├── metadata
