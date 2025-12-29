@@ -70,7 +70,8 @@ The example file(20201210131958659999.hdf5) preserves exactly the same internal 
 ```
 * event_id is the event start time.
 
-## Config.json
+## Setting
+* The settings are in config.json.
 * model_params:
   - **distance prediction module**: ```distance_type``` (v1(SC)/v2(BI))
 * training_params:
