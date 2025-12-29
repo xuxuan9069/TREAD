@@ -96,7 +96,7 @@ $ python evaluate.py --experiment_path TREAD_SC_0.0025 --head_times --val
 $ python evaluate.py --experiment_path TREAD_SC_0.0025 --head_times 
 ```
 
-## Model Evaluate Results
+## Model Alert Performance Results
 ```shell
 $ python analysis.py --path TREAD_SC_0.0025/evaluation/test/head_times_predictions.pkl
 ```

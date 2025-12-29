@@ -389,7 +389,7 @@ if __name__ == '__main__':
         json.dump(results, stats_file, indent=4)
 
     if args.head_times:
-        print(f'Start to evaluate alart performance!!!')
+        print(f'Start to evaluate alert performance!!!')
         times_pga = np.arange(args.blind_time, 25, 0.2)
         alpha = [float(x) for x in args.alpha.split(',')]
         warning_time_information = calculate_warning_times(config, model_list, data, event_metadata,
