@@ -352,6 +352,7 @@ if __name__ == '__main__':
     loc_pred_full = []
     pga_pred_full = []
     
+    print(f'Start to evaluate regression performance!!!')
     for time in times:
         print(f'Times: {time}s')
         pga_pred, distances , pga_labels, distance_labels = predict_at_time(model_list, time, data, event_metadata,
@@ -388,7 +389,7 @@ if __name__ == '__main__':
         json.dump(results, stats_file, indent=4)
 
     if args.head_times:
-        print(f'Start Events Test!!!')
+        print(f'Start to evaluate alart performance!!!')
         times_pga = np.arange(args.blind_time, 25, 0.2)
         alpha = [float(x) for x in args.alpha.split(',')]
         warning_time_information = calculate_warning_times(config, model_list, data, event_metadata,

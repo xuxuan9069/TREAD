@@ -4,7 +4,7 @@ TREAD: A Transformer-Based Regional Earthquake Early Warning Model with Distance
 ## Installation (Anaconda or Docker)
 ### Step0. Clone the repository
 ```shell
-$ git clone https://github.com/xuxuan/TREAD.git
+$ git clone https://github.com/xuxuan9069/TREAD.git
 ```
 
 ### Step1. Create a new Anaconda virtual environment
@@ -15,6 +15,7 @@ $ conda activate TREAD
 
 ### Step2. Install the dependencies
 ```shell
+$ cd TREAD
 $ pip install -r requirements.txt
 ```
 
@@ -81,17 +82,20 @@ The example file(20201210131958659999.hdf5) preserves exactly the same internal 
 ## Model Training
 * You can use ```--test_run``` to test only 10 events.
 ```shell
-$ python train.py --cofig config.json
+$ python train.py --config config.json
 ```
 
 ## Model Evaluate
 * You can use ```--test_run``` to test only 10 events.
-* You can use ```--val``` to test validation dataset.
+* Evaluate validation and test dataset.
 ```shell
-$ python evaluate.py --experiment_path <Checkpoint dir> --head_times 
+$ python evaluate.py --experiment_path TREAD_SC_0.0025 --head_times --val
+```
+```shell
+$ python evaluate.py --experiment_path TREAD_SC_0.0025 --head_times 
 ```
 
 ## Model Evaluate Results
 ```shell
-$ python analysis.py --path <Test dataset pkl file path>
+$ python analysis.py --path TREAD_SC_0.0025/evaluation/test/head_times_predictions.pkl
 ```

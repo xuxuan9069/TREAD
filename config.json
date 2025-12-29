@@ -63,22 +63,22 @@
         "rotation_anchor": [42, 0]
     },
     "training_params": {
-        "device":3,
+        "device":0,
         "lr": 1e-5,
         "clipnorm": 1.0,
         "epochs_full_model": 50,
         "data_path": "no",
         "train_data_path": [
-            "/mnt/disk1/minxuan/taiwan_data_new/train_CWBSN_window_split_year.hdf5"
+            "20201210131958659999.hdf5"
         ],
         "val_data_path": [
-            "/mnt/disk1/minxuan/taiwan_data_new/val_CWBSN_window_split_year.hdf5"
+            "20201210131958659999.hdf5"
         ],
         "test_data_path": [
-            "/mnt/disk1/minxuan/taiwan_data_new/test_CWBSN_window_split_year.hdf5"
+            "20201210131958659999.hdf5"
         ],
         "workers": 5,
-        "weight_path": "taiwan_distance_v1_0.0025",
+        "weight_path": "TREAD_SC_0.0025",
         "loss_ratio": 0.0025,
         "loss_weights": {
             "pga": 1
